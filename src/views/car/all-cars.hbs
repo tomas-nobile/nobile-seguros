@@ -1,0 +1,39 @@
+<div class="container">
+<h1>Cars</h1>
+
+
+<div class="row">
+    {{#each allCars}}
+
+    <div class="col-6">
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Car's information</h2>
+            </div>
+            
+            <div class="card-body">
+                <a href="/admin/edit/{{_id}}" class="float-right"><i class="fas fa-edit"></i></a>
+                
+                <h4>Brand: {{brand}}</h4>
+                <h4>Model: {{model}}</h4>
+                <h4>Price 0km: {{price}}</h4>
+                <h4>Cost per month: {{cost}}</h4>
+                <h4>Cost per month premium: {{costP}}</h4>
+
+                <form action="/admin/delete/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-md btn-block btn-danger">DELETE</button>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    {{/each}}
+
+</div>
+
+</div>

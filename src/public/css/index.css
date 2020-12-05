@@ -1,0 +1,253 @@
+/*=============================================
+ANCHOR GENERAL
+=============================================*/
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: 00;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.7rem;
+}
+p {
+  font-size: 1.2rem;
+}
+
+/*=============================================
+  ANCHOR HEADER
+  =============================================*/
+
+
+.nav li {
+  margin-right: 5rem;
+}
+
+.nav-item a {
+  color: #3a526e;
+  font-size: 0.8rem;
+}
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  min-height: 8vh;
+}
+.logo img {
+  width: 500px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+  margin-top: 1rem;
+  padding: 0;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  color: #000000;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.burguer {
+  display: none;
+  cursor: pointer;
+}
+.burguer div {
+  background-color: #3a526e;
+  height: 3px;
+  margin: 5px;
+  width: 25px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4rem;
+}
+.header h1 {
+  align-self: center;
+  margin-right: 3rem;
+}
+.header img {
+  max-width: 600px;
+  margin-left: 3rem;
+}
+
+/*=============================================
+MQ HEADER
+=============================================*/
+
+@media only screen and (max-width: 1199.98px) {
+  .logo img {
+    width: 400px;
+  }
+  .nav-links {
+    width: 60%;
+  }
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+
+  .header {
+    padding-top: 3rem;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  .header img {
+    max-width: 350px;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .logo img {
+    width: 350px;
+  }
+  .nav-links {
+    width: 60%;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+  }
+  .header {
+    padding-top: 1rem;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .burguer {
+    display: block;
+  }
+
+  .nav-active {
+    display: flex;
+  }
+
+  .logo img {
+    width: 400px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+  }
+  .header img {
+    max-width: 300px;
+    margin-left: 1.5rem;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .burguer {
+    margin-left: 1rem;
+  }
+  .logo img {
+    width: 300px;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .header h1 {
+    font-size: 2.2rem;
+    margin: 1rem 0;
+    order: 1;
+    text-align: center;
+  }
+  .header img {
+    max-width: 390px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  html {
+    padding-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  html {
+    padding-left: 1rem;
+  }
+  .logo img {
+    width: 260px;
+  }
+  .header img {
+    max-width: 340px;
+  }
+}
+
+
+/*=============================================
+ANCHOR CONTACT US
+=============================================*/
+
+
+label {
+  display: block;
+}
+
+input:not([type="submit"]),
+textarea,
+select {  
+
+  border: 1px solid black;
+  display: block;
+  border-radius: 5px;
+  width: 97%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  height: 20rem;
+}
+
+fieldset p,
+label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+label[for="phone2"],
+label[for="email"] {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.phone-email {
+  max-width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-email input {
+  margin: 0;
+  padding: 0;
+}
+

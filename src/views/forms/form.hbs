@@ -1,0 +1,42 @@
+  <main class="container mx-auto">
+<form action="/new-form" method="POST">
+<h2 class="text-center mb-4">Contact us</h2>
+  <fieldset class="datos-personales">
+      <legend>Personal information</legend>
+
+      
+      <input type="text" id="name" name="name" placeholder="Name">
+
+      
+      <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+      
+      <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone number">
+
+      
+      <textarea id="message" name="message" placeholder="Message" ></textarea>
+
+  </fieldset>
+
+
+  <fieldset>
+      <legend>Contact method</legend>
+
+      <div class="phone-email">
+          <label for="phone2">Phone</label>
+          <input type="radio"  value="phone" name="contactMethod"id="phone2">
+          <label for="email">Email</label>
+          <input type="radio" value="email"name="contactMethod" id="email">
+      </div>
+      <p>Choose date and time </p>
+     
+      <input type="date" id="date" name="date" placeholder="Date">
+      
+      <input type="time" id="time" min="9:00" max="18:00" name="time" placeholder="time">
+
+  </fieldset>
+  <button type="submit" class="btn btn-dark text-center mb-5">Submit</button>
+
+</form>
+
+</main>

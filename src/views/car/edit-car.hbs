@@ -1,0 +1,24 @@
+<div class="container">
+    
+<form action="/admin/edit/{{car.id}}?_method=PUT" method="POST">
+    <input type="hidden" name="_method" value="PUT">
+    <legend>Edit car</legend>
+
+    <div class="form-group">
+        <label for="brand">Brand: </label>
+        <input type="text" class="form-control" id="brand" name="brand" value="{{car.brand}}">
+
+        <label for="model">Model: </label>
+        <input type="text" class="form-control" id="model" name="model" value="{{car.model}}">
+
+        <label for="price">Price:</label>
+        <input type="text" class="form-control" id="price" name="price" value="{{car.price}}">   
+
+    </div>
+
+    
+
+    <button type="submit" class="btn btn-primary">Edit</button>
+</form>
+
+</div>
