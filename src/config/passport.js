@@ -10,7 +10,7 @@ passport.use(new LocalStrategy({
 
         const user= await User.findOne({email});
         if(!user){
-            return done(null,false,{message:'Not user found'});
+            return done(null,false,{messa ge:'Not user found'});
         }else{
             const match= await user.matchPassword(password);
             if(match){
